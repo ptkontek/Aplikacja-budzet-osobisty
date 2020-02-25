@@ -1,0 +1,5 @@
+
+.icon-money:before { content: '\e800'; } /* '' */
+.icon-wallet:before { content: '\e801'; } /* '' */
+.icon-dollar:before { content: '\e802'; } /* '' */
+.icon-user-secret:before { content: '\f21b'; } /* '' */

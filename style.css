@@ -19,14 +19,24 @@ h1.logo
 	text-align: center;
 	padding: 10px 0px 0px 0px;
 	letter-spacing: 3px;
-	border-bottom: 1px solid #003333;
+	border-bottom: 1px solid white;
+	cursor:default;
+
 	
+}
+
+h4
+{
+	color: #004d4d;
 }
 
 #topnav
 {
 	background-color: #004d4d;
 	text-align: center;
+	width: 100%;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
 
 .menu
@@ -35,7 +45,7 @@ h1.logo
 	margin: 0;
 	padding: 7px;
 	font-size: 18px;
-	min-height: 32px;
+	height: 34px;
 	line-height: 200%;
 }
 
@@ -54,6 +64,11 @@ h1.logo
 	cursor: pointer;
 	color: #0a2b42;
 }
+.menu > li:hover > a
+{
+	color: #000;
+	color: #d9d9d9;
+}
 
 .menu > li:first-child
 {
@@ -62,12 +77,9 @@ h1.logo
 
 .menu a
 {
-	color: #d9d9d9;
 	color: ivory;
 	text-decoration: none;
 }
-
-
 
 #content 
 {
@@ -76,11 +88,12 @@ h1.logo
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
+	margin-top: 60px;
 	text-align: center;
 	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	cursor:default
 }
 
 .user
@@ -89,20 +102,23 @@ h1.logo
 	float: left;
 	padding: 10px;
 	margin: 0;
-	
 }
 
 .user:hover
 {
-	background-color: #00b3b3;
+	background-color: #f2f2f2;
 	cursor: pointer;
 }
 .user a
 {
 	 text-decoration: none;
-	 color: black;
+	 color: #8c8c8c;
 }	 
-	
+
+.user:hover > a
+{
+	color: #008080;
+}	
 	
 .column1
 {
@@ -173,6 +189,30 @@ input[type=submit]:focus
 input[type=submit]:hover
 {
 	background-color: #006666;
+}
+
+
+#coment
+{
+	resize: none;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.ikon
+{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45px;
+	height: 40px;
 }
 
 #footer
