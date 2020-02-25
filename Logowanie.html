@@ -9,12 +9,10 @@
 	
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	
-	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
-
 	<link href="https://fonts.googleapis.com/css?family=Courgette|Merienda&display=swap&subset=latin-ext" rel="stylesheet">
+	
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
 	
 	<!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -25,20 +23,7 @@
 <body>
 
 	<header>
-
-		<h1 class="logo">Budżet osobisty pod kontrolą</h1>
-		
-		<nav id="topnav">
-		
-			<ul class="menu">
-				<li><a href="#">Strona główna</a></li>
-				<li><a href="#">Dodaj przychód</a></li>
-				<li><a href="#">Dodaj wydatek</a></li>
-				<li><a href="#">Przeglądaj bilans</li>
-				<li><a href="#">Ustawienia</a></li>
-			</ul>
-		</nav>
-		
+		<h1 class="logo">Budżet osobisty pod kontrolą</h1>	
 	</header>	
 
 	<main>
@@ -47,21 +32,24 @@
 	
 				<div id = "content">
 					<p> Zapanuj nad swoimi finansami już dziś! Skorzystaj z aplikacji do zarządzania budżetem osobistym w prosty i wygodny sposób. </p>
+					<div class="ikon">
+						<i class="icon-wallet"></i>
+					</div>
 					<p> <strong> Zaloguj się </strong> lub <strong> zarejestruj</strong>, jeśli nie masz jeszcze konta. </p>
 				</div>
 	
 			</section>
 			<section>
 				<div id = "content" style= "width: 400px; padding:0 ;">
-					<div class="user" 
+					<div class="user" style="background-color: #e6e6e6; cursor:default;">
 							<a href=# class="link" >
-								<h3 style = "opacity:0.5;"> Rejestracja</h3>
+								<h3 style="color: #006666; cursor:default;" > Logowanie</h3>
 							</a>
 						</div>
 						
-						<div class="user" style="background-color: #e6e6e6;"> 
+						<div class="user" >
 							<a href=# class="link">
-								<h3 style="color: #008080; text-decoration " > Logowanie</h3>
+								<h3>Rejestracja</h3>
 							</a>
 						</div>
 						
@@ -69,7 +57,7 @@
 						
 				</div>
 				
-				<div id="content" style= "width: 380px; padding:20px 10px; margin-top:20px ;">
+				<div id="content" style= "width: 380px; padding:20px 10px; margin-top:20px;">
 					<form>
 						<div class ="row">
 							<div class="column1"><label for="name">Login:</label></div>
@@ -101,6 +89,9 @@
  
  
 	</div>
+	
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="scroll.js" ></script>
  
  
 
