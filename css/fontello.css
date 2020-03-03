@@ -55,6 +55,12 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 .icon-money:before { content: '\e800';} /* '' */
-.icon-wallet:before { content: '\e801'; ;font-size: 32px; color:#604020;} /* '' */
-.icon-dollar:before { content: '\e802'; } /* '' */
-.icon-user-secret:before { content: '\f21b'; } /* '' */
+.icon-wallet:before { content: '\e801'; font-size: 32px; color:#604020;} /* '' */
+.icon-dollar:before { content: '\e802'; font-size:28px; color:ivory; } /* '' */
+.icon-user-secret:before { content: '\f21b'; font-size: 30px; color:black; } /* '' */
+.icon-money:before { content: '\e800'; font-size: 30px; color:black; } /* '' */
+.icon-sun:before { content: '\e803'; font-size: 26px; color:orange; } /* '' */
+.icon-glass:before { content: '\e804'; font-size: 30px; color:black; } /* '' */
+.icon-user-secret:before { content: '\f21b'; font-size: 30px; color:black; } /* '' */
+.icon-sun-filled:before { content: '\e805'; font-size: 30px; color:black; } /* '' */
+.icon-sun-1:before { content: '\e806';font-size: 30px; color:black; } /* '' */

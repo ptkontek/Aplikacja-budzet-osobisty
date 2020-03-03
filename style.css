@@ -9,20 +9,36 @@ body
 
 h1.logo
 {
-	font-family: 'Merienda', sans-serif ;
+	font-style: italic;
 	width: 100%;
 	height: 50px;
 	margin: 0px;
-	background-color: #e6e6e6;
-	font-size: 24px;
-	color: #004d4d;
+	background-color: black; 
+	font-size: 26px;
+	color: ivory;
 	text-align: center;
 	padding: 10px 0px 0px 0px;
 	letter-spacing: 3px;
-	border-bottom: 1px solid white;
+	/*border-bottom: 1px solid white; */
 	cursor:default;
+	opacity: 0.65;
 
 	
+}
+
+#content 
+{
+	background-color: white;
+	width: 700px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	text-align: center;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	cursor:default
 }
 
 h4
@@ -44,7 +60,7 @@ h4
 	list-style-type: none;
 	margin: 0;
 	padding: 7px;
-	font-size: 18px;
+	font-size: 17px;
 	height: 34px;
 	line-height: 200%;
 }
@@ -57,17 +73,10 @@ h4
 	border-right: 1px dashed #d9d9d9;
 }
 
-.menu > li:hover
+.menu a
 {
-	
-	background-color: #006666;
-	cursor: pointer;
-	color: #0a2b42;
-}
-.menu > li:hover > a
-{
-	color: #000;
-	color: #d9d9d9;
+	color: ivory;
+	text-decoration: none;
 }
 
 .menu > li:first-child
@@ -75,26 +84,53 @@ h4
 	border-left: 1px dashed #d9d9d9;
 }
 
-.menu a
+.menu > li:hover,
+.menu > li > ul > li:hover
 {
-	color: ivory;
-	text-decoration: none;
+	
+	background-color: #006666;
+	cursor: pointer;
+	color: #0a2b42;
 }
 
-#content 
-{
-	background-color: white;
-	width: 700px;
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 60px;
-	text-align: center;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	cursor:default
+.menu >.active>a
+{	
+	color: #ffe6b3;
+	text-shadow: 3px 3px 3px grey;
 }
+
+.menu > li:hover > a,
+.menu > li > ul > li:hover > a
+{
+	color: #000;
+}
+
+.menu > li > ul
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0;
+	height: 30px;
+	display: none;
+	font-size: 14px;
+}
+
+.menu > li:hover > ul
+{
+	display: block;
+}
+
+.menu > li > ul > li
+{
+	background-color: #004d4d;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #751b1b;
+}
+
+
+
+
 
 .user
 {
@@ -139,8 +175,10 @@ h4
 }
 
 
+
 input[type=text],
-input[type=password]
+input[type=password],
+input[type=email]
 {
 	width: 260px;
 	background-color: #efefef;
@@ -155,7 +193,8 @@ input[type=password]
 }
 
 input[type=text]:focus,
-input[type=password]:focus
+input[type=password]:focus,
+input[type=email]:focus
 {
 	-webkit-box-shadow: 0px 0px 5px 2px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 5px 2px rgba(204,204,204,0.9);
@@ -164,7 +203,8 @@ input[type=password]:focus
 	color: #004d4d;
 }
 
-input[type=submit]
+input[type=submit],
+input[type=button]
 {
 	width: 200px;
 	background-color: #004d4d;
@@ -179,21 +219,25 @@ input[type=submit]
 	outline: none;
 }
 
-input[type=submit]:focus
+input[type=submit]:focus,
+input[type=button]:focus
 {
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 }
 
-input[type=submit]:hover
+input[type=submit]:hover,
+input[type=button]:hover
 {
 	background-color: #006666;
 }
 
 
-#coment
+
+#comment
 {
+
 	resize: none;
 }
 
@@ -215,6 +259,31 @@ input[type=submit]:hover
 	height: 40px;
 }
 
+.incomes
+{
+	
+	width: 500px;
+	padding: 10px;
+	font-size: 17px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+fieldset .row
+{
+	padding: 4px;
+	margin-left: 15px;
+	font-size: 15px;
+}
+
+.row2
+{
+	font-size: 16px;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
 #footer
 {
 	margin-top: 50px;
@@ -223,4 +292,5 @@ input[type=submit]:hover
 	text-align: center;
 	padding: 12px;
 	font-size: 16px;
+	letter-spacing: 1px;
 }	
