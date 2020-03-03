@@ -29,6 +29,30 @@
       "css": "dollar",
       "code": 59394,
       "src": "modernpics"
+    },
+    {
+      "uid": "95fb2e5fdd1ea7e4a420b6ed330e6b08",
+      "css": "sun",
+      "code": 59395,
+      "src": "meteocons"
+    },
+    {
+      "uid": "bcbb9470c9ba0699d5a0e4e97b3d5be9",
+      "css": "glass",
+      "code": 59396,
+      "src": "elusive"
+    },
+    {
+      "uid": "5840fe162df3bcc8e390c58ef4e2acf9",
+      "css": "sun-filled",
+      "code": 59397,
+      "src": "typicons"
+    },
+    {
+      "uid": "ivmsk67zo1yb1tthd3ugi4xnb3get418",
+      "css": "sun-1",
+      "code": 59398,
+      "src": "typicons"
     }
   ]
 }
