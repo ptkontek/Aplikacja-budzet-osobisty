@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Dodaj wydatek- budżet osobisty</title>
+	<meta name="description" content="Dodaj wydatek - Aplikacja do prowadzenbia budżetu osobistego." />
+	<meta name="keywords" content="budżet osobisty, finanse, przychody, wydatki, kontrola finansów, przychody, oszczędzanie" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1 class="logo">Budżet osobisty pod kontrolą <i class="icon-dollar"></i> </h1>
+		
+		<nav id="topnav">
+		
+			<ol class="menu">
+				<li><a href="stronaGlowna.html">Strona główna</a></li>
+				<li><a href="przychody.html">Dodaj przychód</a></li>
+				<li class="active">Dodaj wydatek</li>
+				<li><a href="bilans.html">Przeglądaj bilans</a></li>
+				<li><a href="ustawienia.html">Ustawienia</a>
+					<ul>
+						<li><a href="zmianDane.html">Zmień dane</a></li>
+						<li><a href="zmienKategorie.html">Zmień kategorie</a></li>
+						<li><a href="usunWpis.html">Usuń ostatnie wpisy</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Wyloguj się</a></li>
+			</ol>
+		</nav>
+		
+	</header>	
+
+	<main>
+		<article>
+
+			<section>
+				
+				<div id="content" style="width: 600px;" >
+					<form>
+						<h4 style="margin-top: 10px">Dodaj wydatek</h4>
+						
+						<div class ="incomes">
+							<label for="amount" class="row2" > Kwota wydatku: </label>
+							<input type="amount" name="amount" >
+					
+						</div>
+						
+						<div class ="incomes">
+							<label class="row2"> Data: </label>
+							<input type="date" name="day">
+							
+						</div>
+
+						<div class ="incomes">
+							<fieldset>
+								<legend> Sposób płatności </legend>
+								
+								<div class="row"><label> <input type="radio" value="1" name="method" checked> Gotówka </label></div>
+								<div class="row"><label> <input type="radio" value="2" name="method"> Karta kredytowa </label></div>
+								<div class="row"><label> <input type="radio" value="3" name="method"> Karte debetowa </label></div
+							</fieldset>						
+						</div>
+						
+						<div class ="incomes">
+						<fieldset>
+								<legend> Kategoria wydatku </legend>
+
+								<div class="row"><label> <input type="radio" value="1" name="category"> Jedzenie </label></div>
+								<div class="row"><label> <input type="radio" value="2" name="category"> Mieszkanie</label></div>
+								<div class="row"><label> <input type="radio" value="3" name="category"> Transport </label></div>
+								<div class="row"><label> <input type="radio" value="4" name="category"> Telekomunikacja </label></div>
+								<div class="row"><label> <input type="radio" value="5" name="category"> Opieka zdrowotna</label></div>
+								<div class="row"><label> <input type="radio" value="6" name="category"> Ubranie </label></div>
+								<div class="row"><label> <input type="radio" value="7" name="category"> Higiena </label></div>
+								<div class="row"><label> <input type="radio" value="8" name="category"> Dzieci</label></div>
+								<div class="row"><label> <input type="radio" value="9" name="category"> Rozrywka </label></div>
+								<div class="row"><label> <input type="radio" value="6" name="category"> Wycieczka </label></div>
+								<div class="row"><label> <input type="radio" value="7" name="category"> Szkolenia </label></div>
+								<div class="row"><label> <input type="radio" value="8" name="category"> Książki</label></div>
+								<div class="row"><label> <input type="radio" value="9" name="category"> Oszczędności </label></div>
+								<div class="row"><label> <input type="radio" value="10" name="category"> Na złotą jesień, czyli emeryturę </label></div>
+								<div class="row"><label> <input type="radio" value="11" name="category"> Spłata długów </label></div>
+								<div class="row"><label> <input type="radio" value="12" name="category"> Darowizna </label></div>
+								<div class="row"><label> <input type="radio" value="13" name="category"> Inne wydatki</label></div>
+							</fieldset>
+							
+						</div>
+						<div class ="incomes">
+							<div class="comment"><label for="comment"> Komentarz:  [opcjonalnie] </label></div>
+							<textarea name="comment" id="comment" rows="5" cols="68"></textarea>
+							
+						</div>	
+						
+						<div>
+							<input type="submit" value="Dodaj">
+							<input type="submit" value="Anuluj">
+						</div>
+
+			
+					</form>
+				</div>
+
+			</section>
+		</article>	
+	</main>
+	
+		<div id="footer">
+			Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
+		</div>
+ 
+	</div>
+	
+</body>
+</html>
