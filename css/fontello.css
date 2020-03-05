@@ -56,7 +56,7 @@
 }
 .icon-money:before { content: '\e800';} /* '' */
 .icon-wallet:before { content: '\e801'; font-size: 32px; color:#604020;} /* '' */
-.icon-dollar:before { content: '\e802'; font-size:28px; color:ivory; } /* '' */
+.icon-dollar:before { content: '\e802'; font-size:28px; color: #ffbb33; } /* '' */
 .icon-user-secret:before { content: '\f21b'; font-size: 30px; color:black; } /* '' */
 .icon-money:before { content: '\e800'; font-size: 30px; color:black; } /* '' */
 .icon-sun:before { content: '\e803'; font-size: 26px; color:orange; } /* '' */

@@ -5,10 +5,11 @@
 	<title>Dodaj przychód - budżet osobisty</title>
 	<meta name="description" content="Dodaj przychód - Aplikacja do prowadzenbia budżetu osobistego." />
 	<meta name="keywords" content="budżet osobisty, finanse, przychody, wydatki, kontrola finansów, przychody, oszczędzanie" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -32,24 +33,21 @@
 						<li><a href="usunWpis.html">Usuń ostatnie wpisy</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Wyloguj się</a></li>
+				<li><a href="Logowanie.html">Wyloguj się</a></li>
 			</ol>
 		</nav>
 		
 	</header>	
 
 	<main>
-		<article>
-
-			<section>
-				
-				<div id="content" style="width: 600px;" >
+		<section>
+				<div class="content" style="width: 600px;" >
 					<form>
 						<h4 style="margin-top: 10px">Dodaj przychód</h4>
 						
 						<div class ="incomes">
-							<label for="amount" class="row2" > Kwota przychodu: </label>
-							<input type="amount" name="amount" >
+							<label class="row2" > Kwota przychodu: </label>
+							<input type="text" name="amount" >
 					
 						</div>
 						
@@ -65,7 +63,7 @@
 								
 								<div class="row"><label> <input type="radio" value="1" name="method" checked> Gotówka </label></div>
 								<div class="row"><label> <input type="radio" value="2" name="method"> Karta kredytowa </label></div>
-								<div class="row"><label> <input type="radio" value="3" name="method"> Karte debetowa </label></div
+								<div class="row"><label> <input type="radio" value="3" name="method"> Karte debetowa </label></div>
 							</fieldset>						
 						</div>
 						
@@ -95,15 +93,13 @@
 					</form>
 				</div>
 
-			</section>
-		</article>	
+			</section>	
 	</main>
 	
 		<div id="footer">
 			Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
 		</div>
- 
-	</div>
+
 	
 </body>
 </html>

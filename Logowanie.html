@@ -5,7 +5,7 @@
 	<title>Logowanie - budżet osobisty</title>
 	<meta name="description" content="Logowanie - Aplikacja do prowadzenbia budżetu osobistego." />
 	<meta name="keywords" content="budżet osobisty, finanse, przychody, wydatki, kontrola finansów, logowanie, oszczędzanie" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	
@@ -26,10 +26,9 @@
 	</header>	
 
 	<main>
-		<article>
-			<section>
+		<section>
 	
-				<div id = "content">
+				<div class = "content">
 					<p> Zapanuj nad swoimi finansami już dziś! Skorzystaj z aplikacji do zarządzania budżetem osobistym w prosty i wygodny sposób. </p>
 					<div class="ikon">
 						<i class="icon-wallet"></i>
@@ -37,9 +36,9 @@
 					<p> <strong> Zaloguj się </strong> lub <strong> zarejestruj</strong>, jeśli nie masz jeszcze konta. </p>
 				</div>
 	
-			</section>
-			<section>
-				<div id = "content" style= "width: 400px; padding:0 ;">
+		</section>
+		<section>
+				<div class = "content one">
 					<div class="user" style="background-color: #e6e6e6; cursor:default;">
 							<a href=# class="link" >
 								<h3 style="color: #006666; cursor:default;" > Logowanie  </h3>
@@ -56,43 +55,38 @@
 						
 				</div>
 				
-				<div id="content" style= "width: 380px; padding:20px 10px; margin-top:20px;">
+				<div class = "content two">
 					<form>
 						<div class ="row">
-							<div class="column1"><label for="name">Login:</label></div>
+							<div class="column1">Login:</div>
 							
 							<div class="column2"> <input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" > </div>
 							<div style="clear:both;"> </div>
 						</div>
 						
 						<div class ="row">
-							<div class="column1"><label for="password">Hasło:</label></div>
+							<div class="column1">Hasło:</div>
 							<div class="column2"> <input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" > </div>
 							<div style="clear:both;"></div>
 						</div>
 						
 						<div class ="row">
-							<a href="stronaGlowna.html"> <input type="button" value="Zaloguj się"> <a>
+							<a href="stronaGlowna.html"> <input type="button" value="Zaloguj się"> </a>
 						</div>
 			
 					</form>
 				</div>
 
-			</section>
-		</article>	
+		</section>
 	</main>
 	
 		<div id="footer">
 			Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
 		</div>
- 
- 
-	</div>
+
 	
 	<script src="jquery-1.11.3.min.js"></script>
 	<script src="scroll.js" ></script>
- 
- 
 
 </body>
 </html>
