@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title> Bilans finansów - budżet osobisty</title>
+	<meta name="description" content="Bilans finansów - Aplikacja do prowadzenbia budżetu osobistego." />
+	<meta name="keywords" content="budżet osobisty, finanse, przychody, wydatki, kontrola finansów, przychody, oszczędzanie" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1 class="logo">Budżet osobisty pod kontrolą <i class="icon-dollar"></i></h1>
+		
+		<nav id="topnav">
+		
+			<ol class="menu">
+				<li><a href="stronaGlowna">Strona główna</a></li>
+				<li><a href="przychody.html">Dodaj przychód</a></li>
+				<li><a href="wydatki.html">Dodaj wydatek</a></li>
+				<li class="active">Przeglądaj bilans</li>
+				<li><a href="ustawienia.html">Ustawienia</a>
+					<ul>
+						<li><a href="zmianDane.html">Zmień dane</a></li>
+						<li><a href="zmienKategorie.html">Zmień kategorie</a></li>
+						<li><a href="usunWpis.html">Usuń ostatnie wpisy</a></li>
+					</ul>
+				</li>
+				<li><a href="Logowanie.html">Wyloguj się</a></li>
+			</ol>
+		</nav>
+		
+	</header>	
+
+	<main>	
+		<div class="dropdown">
+			<button class="dropbtn">Wybierz okres czasu
+				<ul class="dropdown-content">
+					<li class="active"><a href="#">Bieżący miesiąc</a></li>
+					<li><a href="#">Poprzedni miesiąc</a></li>
+					<li><a href="#">Bieżący rok</a></li>
+					<li><a href="#">Wybrany okres</a></li>
+				</ul>
+		</div>	
+				
+		<div class="content" style="width:800px;" >
+			<article>
+				<h4 style="color: #ffbb33;"> Bilans finansów z bieżącego miesiąca: </h4>
+				<div class="tab">
+					<table class="table">
+						<thead>
+						  <tr> <th>Nazwa kategorii <th>Suma przychodów [zł]
+						  
+						</thead>
+						<tbody>
+						  <tr> <th>Wynagrodzenie <td>4000.00					  
+						  <tr> <th>Odsetki bankowe <td>10.23					  
+						  <tr> <th>Sprzedaż na Allegro <td>350.00					  
+						  <tr> <th>Inne <td>100.00
+						   <tr style="background-color:#ffdd99;"> <th>ŁĄCZNIE<th>4460.23
+						</tbody>
+					</table>
+					  				
+				</div>
+				<div class="tab">
+					<table class="table">
+						<thead>
+						  <tr><th>Nazwa kategorii<th>Suma wydatków [zł]
+						</thead>
+						<tbody>
+						  <tr><th>Jedzenie<td>650.00
+						  <tr><th>Mieszkanie<td>1200.00
+						  <tr><th>Transport<td>250.00
+						  <tr><th>Telekomunikacja<td>50.00
+						  <tr><th>Ubrania<td>150.00
+						  <tr><th>Higiena<td>35.00
+						  <tr><th>Rozrywka<td>150.00
+						  <tr><th>Książki<td>60.00
+						  <tr style="background-color: #ffdd99;"> <th>ŁĄCZNIE<th>2545.00
+						</tbody>
+					</table>
+										
+				</div>
+				<div class="outcome"> <span style="float:left; padding:5px;">BILANS FINANSÓW WYNOSI: </span>
+				<div class="score">1915.23 zł </div>
+				</strong>
+				
+				<br> <br><strong>Gratulacje, świetnie zarządzasz finansami!</strong>
+				 </div>
+			</article>
+										
+		</div>
+	</main>
+	
+		<div id="footer">
+			Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
+		</div>
+
+</body>
+</html>
