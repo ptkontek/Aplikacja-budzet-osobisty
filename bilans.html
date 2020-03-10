@@ -9,12 +9,15 @@
 	
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
-	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+	<link href="css/fontello.css" rel="stylesheet" type="text/css"/>
+	
+	<script src="js/Chart.min.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script src="js/pieChart.js" type="text/javascript"></script>
 
 </head>
 
-<body>
-
+<body onload="pieChart()">
 	<header>
 
 		<h1 class="logo">Budżet osobisty pod kontrolą <i class="icon-dollar"></i></h1>
@@ -79,21 +82,28 @@
 						  <tr><th>Mieszkanie<td>1200.00
 						  <tr><th>Transport<td>250.00
 						  <tr><th>Telekomunikacja<td>50.00
+						  <tr><th>Opieka zdrowotna<td>80.00
 						  <tr><th>Ubrania<td>150.00
 						  <tr><th>Higiena<td>35.00
-						  <tr><th>Rozrywka<td>150.00
+						  <tr><th>Rozrywka<td>100.00
+						  <tr><th>Wycieczka<td>140.00
+						  <tr><th>Szkolenia<td>50.00
 						  <tr><th>Książki<td>60.00
-						  <tr style="background-color: #d6d6c2;"> <th>ŁĄCZNIE<th>2545.00
+						  <tr><th>Oszczędności<td>200.00
+						  <tr><th>Na złotą jesień<td>300.00
+						  <tr style="background-color: #d6d6c2;"> <th>ŁĄCZNIE<th>3265.00
 						</tbody>
 					</table>
 										
 				</div>
-				<div class="outcome"> <span style="float:left; padding:5px;">BILANS FINANSÓW WYNOSI: </span>
-				<div class="score">1915.23 zł </div>
-				</strong>
 				
-				<br> <br><strong>Gratulacje, świetnie zarządzasz finansami!</strong>
+				<div class="outcome"> <span style="float:left; padding:5px;">BILANS FINANSÓW WYNOSI</span>
+					<div class="score">1115.23 zł </div>				
+					<br> <br><strong>Gratulacje, świetnie zarządzasz finansami!</strong>
 				 </div>
+				 
+				<div id="chartContainer"></div>
+				 
 			</article>
 										
 		</div>
@@ -102,6 +112,8 @@
 		<div id="footer">
 			Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
 		</div>
+		
+		
 
 </body>
 </html>
