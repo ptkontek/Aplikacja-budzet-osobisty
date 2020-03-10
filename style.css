@@ -364,6 +364,141 @@ fieldset .row
 	margin-left: 20px;
 }
 
+.dropbtn 
+{
+  background-color: #ffc34d;
+  color: black;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 2px solid #ffeecc;
+}
+
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+  left: 350px;
+  top: 35px;
+}
+
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  background-color:#ffd480;
+  min-width: 170px;
+  z-index: 1;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+  display: none;
+  border-radius: 3px;
+  left:0;
+  top: 48px;
+  border-radius: 8px;
+  border: 2px solid #ffeecc;
+}
+
+.dropdown-content a 
+{
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  min-width: 120px;
+  font-size: 14px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover,
+.dropdown-content >.active,
+.dropdown-content >.active a
+{
+	background-color: #ffbb33;
+	color: #ffeecc;
+	font-size:15px;
+	border-radius: 8px;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+  opacity: 0.9;
+}
+
+.dropdown:hover .dropbtn 
+{
+	background-color: #ffbb33;
+}
+.tab
+{
+	float: left;
+	width: 380px;
+	text-align:center;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.table
+{
+	text-align:center;
+	width:350px;
+	margin-left:16px;
+	margin-right:16px;
+}
+
+thead
+{
+	background-color: #ffcc66;
+}
+
+tbody
+{
+	background-color: #f5f5f0;
+}
+
+th, td
+{
+	border: 1px solid white;
+	padding: 7px;
+	min-width:160px;
+	border-radius: 8px;
+
+}
+
+.outcome
+{
+	clear:both;
+	text-align: left;
+	font-size: 17px;
+	padding-left:30px;
+}
+
+.score
+{
+	font-size: 17px;
+	background-color:  #ffcc66;
+	float: left;
+	padding: 4px;
+	margin-left:10px;
+	border-radius: 8px;
+	border: 1px solid black;
+	
+}
+
+#chartContainer
+{
+	margin-top:40px;
+	width: 100%;
+	height:450px;
+
+}
+
 #footer
 {
 	margin-top: 50px;
