@@ -5,20 +5,24 @@ function pieChart ()
 				animationEnabled: true,
 				theme: "light2",
 				title:{
-					text: "A oto wykres przedstawiający Twoje wydatki w okresie..:",
+					text: "Wykres przedstawiający Twoje wydatki",
 					fontColor: "#ffc34d",
 					fontSize: 20,
 				},
+				subtitles: [{
+					text: "Bieżący miesiąc",
+					fontSize: 16
+				}],
 				data: [{
 					type: "pie",
-					radius: 130,
+					radius: 140,
 					startAngle: 270,
 					indexLabelFontSize: 15,
 					yValueFormatString: "##0.00\"%\"",
 					toolTipContent: "{name}: <strong>{y}</strong>",
 					indexLabel: "{name}",
 					dataPoints: [
-						{ y: 650/3265*100, name: "Jedzenie", exploded: true  },
+						{ y: 650/3265*100, name: "Jedzenie", exploded: true },
 						{ y: 1200/3265*100, name: "Mieszkanie", exploded: true  },
 						{ y: 250/3265*100, name: "Transport" },
 						{ y: 50/3265*100, name: "Telekomunikacja" },
@@ -38,16 +42,4 @@ function pieChart ()
 			});
 			
 	chart.render();
-
-}
-
-function explodePie (e) 
-{
-			if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
-				e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
-			} else {
-				e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
-			}
-			e.chart.render();
-
 }
