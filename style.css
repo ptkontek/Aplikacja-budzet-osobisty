@@ -373,7 +373,7 @@ fieldset .row
   border: none;
   cursor: pointer;
   border-radius: 3px;
-  border: 1px solid #ffeecc;
+  border: 2px solid #ffeecc;
 }
 
 .dropdown 
@@ -388,7 +388,7 @@ fieldset .row
 {
   display: none;
   position: absolute;
-  background-color: #ffcc66;
+  background-color:#ffd480;
   min-width: 170px;
   z-index: 1;
   list-style-type: none;
@@ -397,9 +397,9 @@ fieldset .row
   display: none;
   border-radius: 3px;
   left:0;
-  top: 47px;
-    border-radius: 3px;
-  border: 1px solid #ffeecc;
+  top: 48px;
+  border-radius: 8px;
+  border: 2px solid #ffeecc;
 }
 
 .dropdown-content a 
@@ -413,11 +413,14 @@ fieldset .row
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover 
+.dropdown-content a:hover,
+.dropdown-content >.active,
+.dropdown-content >.active a
 {
 	background-color: #ffbb33;
 	color: #ffeecc;
 	font-size:15px;
+	border-radius: 8px;
 
 }
 
@@ -426,13 +429,11 @@ fieldset .row
 {
   display: block;
   opacity: 0.9;
-  
 }
 
 .dropdown:hover .dropbtn 
 {
 	background-color: #ffbb33;
-	
 }
 .tab
 {
@@ -450,6 +451,7 @@ fieldset .row
 	margin-left:16px;
 	margin-right:16px;
 }
+
 thead
 {
 	background-color: #ffcc66;
@@ -465,6 +467,8 @@ th, td
 	border: 1px solid white;
 	padding: 7px;
 	min-width:160px;
+	border-radius: 8px;
+
 }
 
 .outcome
@@ -477,9 +481,14 @@ th, td
 
 .score
 {
+	font-size: 17px;
 	background-color:  #ffcc66;
 	float: left;
-	padding: 5px;
+	padding: 4px;
+	margin-left:10px;
+	border-radius: 8px;
+	border: 1px solid black;
+	
 }
 
 #footer
