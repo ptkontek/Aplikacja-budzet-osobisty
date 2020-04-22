@@ -63,7 +63,9 @@
 				
 				<div class ="row">
 					<div class ="col-md-8 offset-md-2 col-lg-6 offset-lg-3 background mt-4">
+					
 						<form action="login.php" method="post">
+						
 							<div class ="row">
 								<div class="col-3 column1 form-group ml-2"> <label for="inputLogin">Login:</label></div>
 								
