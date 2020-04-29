@@ -15,7 +15,7 @@
 	try{
 		
 		//otwarcie połączenia z bazą danych
-		$connection = @new mysqli($host, $db_user, $db_password, $db_name);
+		$connection = new mysqli($host, $db_user, $db_password, $db_name);
 		//@- w przypadku błędu php nie będzie pokazywać żadnych informacji
 	
 		if ($connection->connect_errno!=0)	{ //inna niż 0 = true
@@ -41,6 +41,7 @@
 					// wlozenie danych do tablicy asocjacyjnej
 					$row = $result->fetch_assoc();
 					
+					// jeśli funkcja zwróci true
 					if (password_verify($password,$row['password'])){
 					
 						//flaga - zmienna typu bool - ze jestesmy zalogowani
@@ -73,11 +74,9 @@
 			$connection->close(); //zamknięcie połączenia
 		}
 	}
-	
-	catch(Exception $e)
-	{
+	catch(Exception $e){
 		echo '<span style="color:red;">Błąd serwera! Przepraszamy za niedogodności i prosimy o wizytę w innym terminie!</span>';
-		echo '<br />Informacja developerska: '.$e;
+		//echo '<br />Informacja developerska: '.$e;
 	}
 	
 ?>
