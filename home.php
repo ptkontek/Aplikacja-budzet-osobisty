@@ -47,17 +47,17 @@
 				<ul class="navbar-nav mx-auto">
 				
 					<li class="nav-item active"><a class="nav-link"> Strona główna</a></li>
-					<li class="nav-item"><a class="nav-link" href="przychody.html">Dodaj przychód</a></li>
-					<li class="nav-item"><a class="nav-link" href="wydatki.html">Dodaj wydatek</a></li>
-					<li class="nav-item"><a class="nav-link" href="bilans.html">Przeglądaj bilans</a></li>
+					<li class="nav-item"><a class="nav-link" href="incomes.php">Dodaj przychód</a></li>
+					<li class="nav-item"><a class="nav-link" href="expenses.php">Dodaj wydatek</a></li>
+					<li class="nav-item"><a class="nav-link" href="balance.php">Przeglądaj bilans</a></li>
 					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true">Ustawienia</a>
 					
 						<div class="dropdown-menu" aria-labelledby="submenu">
-							<a class="dropdown-item" href="zmianDane.html">Zmień dane</a>
+							<a class="dropdown-item" href="changeData.php">Zmień dane</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="zmienKategorie.html">Zmień kategorie</a>
+							<a class="dropdown-item" href="changeCategory.php">Zmień kategorie</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="usunWpis.html">Usuń ostatnie wpisy</a>
+							<a class="dropdown-item" href="deleteEntry.php">Usuń ostatnie wpisy</a>
 						</div>
 						
 					</li>
@@ -71,11 +71,6 @@
 		<article>
 
 			<div class="container">
-				<div class="email">
-					<?php
-						echo $_SESSION['email'];
-					?>
-				</div>
 				<div class="row text-center">
 					<div class="col-12 opis content background">
 						<h2 class="h4 mt-2"> Budżet osobisty </h2>
