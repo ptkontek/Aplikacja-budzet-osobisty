@@ -1,9 +1,21 @@
 body{
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/tlo.png");
-	margin: 0px;
     font-family: 'Lato', sans-serif ;
 	font-size: 20px;
+	width: 100%;
+	min-height: 100%;
+    position:relative;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+html{
+	height: 100%;
 }
 
 .h3{
@@ -37,92 +49,6 @@ body{
 	margin-bottom: 10px;
 	font-size: 14px;
 }	
-
-@media (max-width: 767.98px) { 
-.nav-item{
-	border-right: none;
-	border-top: 1px dashed #ffeecc;
-}
-
-.nav-item:first-child{
-	border-left: none;
-}
-
-.dropdown-menu{
-	text-align:center;
-}
-
-.nav-item{
-	font-size: 17px;
-}
-
-.h3{
-	font-size: 24px;
-}
-}
-
-@media (min-width: 768px) {
-.nav-item{
-	border-right: 1px dashed #d9d9d9;
-}
-
-.nav-item:first-child{
-	border-left: 1px dashed #d9d9d9;
-}
-
-.nav-link{
-	font-size: 16px;
-}
-.nav-item{
-	padding-left:5px;
-}
-.nav-item:first-child{
-	border-left: none;
-}
-.nav-item:last-child{
-	border-right:none;
-}
-.dropdown-item{
-	padding-left:2px;
-	padding-right:2px;
-}
-}
-
-@media (min-width: 992px) {
-.nav-link{
-	font-size: 17px;
-}
-.nav-item{
-	border-right: 1px dashed #d9d9d9;
-	width: 150px;
-}
-
-.nav-item:first-child{
-	border-left: 1px dashed #d9d9d9;
-}
-.nav-item:last-child{
-	border-right: 1px dashed #d9d9d9;
-}
-.form{
-		max-width: 700px;
-	}
-}
-
-@media (max-width: 1199.98px) { 
-.h4{
-		font-size:22px;
-	}
-p{
-		font-size:18px;
-}
-}
-
-
-@media (min-width: 1200px) {
-.container{
-	max-width: 1000px;
-}
-}
 
 .h4{
 	color: #004d4d;
@@ -169,12 +95,13 @@ p{
 	color: white;
 }
 
+select>option:hover,
 .dropdown-item:hover{
 	background-color: #ffcc66;
 	cursor: pointer;
 	color: #0a2b42;
-
 }
+
 .dropdown-divider{
 	border: 0.5px solid #ffeecc;
 }
@@ -227,6 +154,7 @@ p{
 	color: #004d4d;
 }
 
+
 input[type=date],
 input[type=text],
 input[type=password],
@@ -273,6 +201,19 @@ input[type=date]:focus{
 	border: none;
 	border-radius: 8px;
 	letter-spacing: 1px;
+}
+
+.save {
+	margin-left:20px;
+	background-color:  transparent;
+	font-size:18px;
+	color: black;
+	border: none;
+	letter-spacing: 1px;
+}
+
+.save:hover{
+		color: #ffaa00;
 }
 
 input[type=button]{
@@ -371,6 +312,13 @@ legend{
 	height: 40px;
 }
 
+.ikon1{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .incomes,
 .expenses{
 	padding: 10px;
@@ -438,7 +386,23 @@ th, td{
 	margin-top:40px;
 	width: 100%;
 	height:450px;
+}
 
+.nextStep{
+	color: #ffcc66;
+	margin: 30px;
+}
+
+.nextStep:hover{
+	text-decoration:none;
+	color: #006666;
+}
+
+.container{ 
+	height: auto !important;
+	height: 100%;
+	min-height:calc(100% - 86px); 
+	position: relative;
 }
 
 .footer{
@@ -450,5 +414,106 @@ th, td{
 	font-size: 16px;
 	letter-spacing: 1px;
 	opacity: 0.9;
-}	
+	position: absolute;
+	margin-bottom: 0px;
+	width: 100%;
+}
 
+@media (max-width: 767.98px) { 
+.nav-item{
+	border-right: none;
+	border-top: 1px dashed #ffeecc;
+}
+
+.nav-item:first-child{
+	border-left: none;
+}
+
+.dropdown-menu{
+	text-align:center;
+}
+
+.nav-item{
+	font-size: 17px;
+}
+
+.h3{
+	font-size: 24px;
+}
+}
+	
+@media (max-width: 575.98px) { 
+.h3{
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+.footer{
+	margin-top: 40px;
+	padding: 8px;
+	font-size: 14px;
+}	
+}
+
+@media (min-width: 768px) {
+.nav-item{
+	border-right: 1px dashed #d9d9d9;
+}
+
+.nav-item:first-child{
+	border-left: 1px dashed #d9d9d9;
+}
+
+.nav-link{
+	font-size: 16px;
+}
+.nav-item{
+	padding-left:5px;
+}
+.nav-item:first-child{
+	border-left: none;
+}
+.nav-item:last-child{
+	border-right:none;
+}
+.dropdown-item{
+	padding-left:2px;
+	padding-right:2px;
+}
+}
+
+@media (min-width: 992px) {
+.nav-link{
+	font-size: 17px;
+}
+.nav-item{
+	border-right: 1px dashed #d9d9d9;
+	width: 150px;
+}
+
+.nav-item:first-child{
+	border-left: 1px dashed #d9d9d9;
+}
+.nav-item:last-child{
+	border-right: 1px dashed #d9d9d9;
+}
+.form{
+		max-width: 700px;
+	}
+}
+
+@media (max-width: 1199.98px) { 
+.h4{
+		font-size:22px;
+	}
+p{
+		font-size:18px;
+}
+}
+
+
+@media (min-width: 1200px) {
+.container{
+	max-width: 1000px;
+}
+}
