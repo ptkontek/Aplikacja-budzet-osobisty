@@ -104,10 +104,19 @@
 					if ($OK==true){
 						//wszystkie testy ok, dodanie do bazy
 						if ( $connection->query("INSERT INTO users VALUES (NULL, '$login' ,'$passwordHash','$email')")){
-							$_SESSION['registrationOK']=true;
-							header('Location: hello.php'); 
-						}else{
-							throw new Exception($connection->error);
+							
+							//przypisanie userowi wartości domyślnych
+							if($connection->query("INSERT INTO expenses_category_assigned_to_users(user_id, name) SELECT u.id AS user_id, ec.name FROM users AS u CROSS JOIN expenses_category_default AS ec WHERE u.email='$email'")){
+								
+								if($connection->query("INSERT INTO incomes_category_assigned_to_users(user_id, name) SELECT u.id AS user_id, ic.name FROM users AS u CROSS JOIN incomes_category_default AS ic WHERE u.email='$email'")){
+								
+									if($connection->query("INSERT INTO payment_methods_assigned_to_users(user_id, name) SELECT u.id AS user_id, p.name FROM users AS u CROSS JOIN payment_methods_default AS p WHERE u.email='$email'")){
+
+										$_SESSION['registrationOK']=true;
+										header('Location: hello.php'); 
+									}else{ throw new Exception($connection->error);}
+								}else{ throw new Exception($connection->error);}
+							}else{ throw new Exception($connection->error);}	
 						}
 					}
 					// konieczne zamknięcie połączenia
@@ -118,12 +127,8 @@
 			echo '<span style = "color:#b30000; font-size:17px;">Błąd serwera! Przepraszamy za niedogodności i prosimy o rejestrację w innym terminie!" </span>';
 			//echo '<br /> Informacja developerska: '.$e;			
 		}
-
 	}
-	
-
 ?>
-
 <!DOCTYPE HTML>
 <html lang="pl">
 <head>
