@@ -78,6 +78,7 @@
 </head>
 
 <body>
+	<div class="content">
 	<header>
 		<h1 class="h3">Budżet osobisty pod kontrolą <i class="icon-dollar"></i></h1>
 		<nav class="navbar navbar-expand-md p-1">
@@ -178,7 +179,7 @@
 			?>
 			<article>
 				<div class="row">
-					<div class="col-12 col-lg-10 offset-lg-1  background mt-5">
+					<div class="col-12 col-lg-10 offset-lg-1  background b mt-5">
 						<h4 class="h4 font-weight-bold mt-2 mb-5"> Bilans finansów: </h4>
 						<i class="icon-wallet"></i> <br><br>
 			
@@ -187,7 +188,7 @@
 			</article>
 		</div>						
 	</main>
-	
+	</div>
 	<footer class="footer">
 			Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
 	</footer>

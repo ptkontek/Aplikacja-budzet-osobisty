@@ -47,6 +47,7 @@
 </head>
 
 <body onload="pieChart()">
+	<div class="content">
 	<header>
 		<h1 class="h3">Budżet osobisty pod kontrolą <i class="icon-dollar"></i></h1>
 		<nav class="navbar navbar-expand-md p-1">
@@ -105,7 +106,7 @@
 				
 			<article>
 				<div class="row">
-					<div class="col-12 col-lg-10 offset-lg-1 background mt-5">
+					<div class="col-12 col-lg-10 offset-lg-1 background b mt-5">
 
 						<?php
 							require_once "connect.php";
@@ -271,7 +272,7 @@
 			</article>				
 		</div>
 	</main>
-	
+	</div>
 	<footer class="footer">
 			Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
 	</footer>	

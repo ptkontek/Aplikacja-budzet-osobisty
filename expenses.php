@@ -137,6 +137,7 @@
 </head>
 
 <body>
+	<div class="content">
 	<header>
 		<h1 class="h3">Budżet osobisty pod kontrolą <i class="icon-dollar"></i></h1>
 		<nav class="navbar navbar-expand-md p-1">
@@ -206,7 +207,7 @@
 									echo $_SESSION['frDate'];
 									unset($_SESSION['frDate']);
 								}
-								?>class="form-control" id="inputDate" name="date">
+								?>"class="form-control" id="inputDate" name="date">
 								<?php
 									if (isset($_SESSION['errorDate'])){
 										echo '<div class="error">'.$_SESSION['errorDate'].'</div>';
@@ -352,7 +353,7 @@
 			</div>
 		</section>	
 	</main>
-	
+	</div>
 	<footer class="footer">
 			Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
 	</footer>

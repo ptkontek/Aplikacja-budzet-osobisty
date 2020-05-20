@@ -40,7 +40,7 @@
 </head>
 
 <body>
-
+	<div class="content">
 	<header>
 		<h1 class="h3">Budżet osobisty pod kontrolą <i class="icon-dollar"></i></h1>
 	</header>	
@@ -78,7 +78,7 @@
 				</div>
 				
 				<div class ="row">
-					<div class ="col-md-8 offset-md-2 col-lg-6 offset-lg-3 background mt-4">
+					<div class ="col-md-8 offset-md-2 col-lg-6 offset-lg-3 background b mt-4">
 						<form action="login.php" method="post">
 							<div class ="row">
 								<div class="col-3 column1 form-group ml-2"> <label for="inputLogin">Login:</label></div>
@@ -106,8 +106,7 @@
 			</section>
 		</div>
 	</main>
-	
-	
+	</div>
 	<footer class="footer">
 		Budżet osobity 2020 &copy; Wszelkie prawa zastrzeżone
 	</footer>
